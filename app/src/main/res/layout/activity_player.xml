@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,8 +7,25 @@
     android:orientation="vertical"
     tools:context=".Player">
 
-    <ListView
-        android:id="@+id/list_item"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginLeft="@android:dimen/config_restrictedIconSize"
+        android:layout_width="104dp"
+        android:layout_height="90dp"
+        android:src="@drawable/virat" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Virat Kholi"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+    
+</RelativeLayout>

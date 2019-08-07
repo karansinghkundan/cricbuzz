@@ -7,6 +7,11 @@ import android.widget.ListView;
 
 public class Player extends AppCompatActivity {
 
+    int[] Images = {R.drawable.dhoni,R.drawable.virat,R.drawable.hardik};
+
+    String[] name = {"Virat kholi", "Dhoni","Hardik"};
+
+    String[] Description = {"Batsman", "Bowler", "AllRounder"};
 
 
 
