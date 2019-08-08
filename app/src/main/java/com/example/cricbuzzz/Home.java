@@ -77,7 +77,9 @@ public class Home extends AppCompatActivity
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
+
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -107,4 +109,6 @@ public class Home extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }
