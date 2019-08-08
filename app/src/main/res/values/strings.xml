@@ -77,6 +77,20 @@
         <item>Dale Steyn</item>
         <item>Kagiso Rabada</item>
     </string-array>
+
+    <string-array name="New_ZEALAND">
+        <item>Martin Guptil</item>
+        <item>Colin Munro</item>
+        <item>Kane Williamson(c)</item>
+        <item>Ross taylor</item>
+        <item>Tom Latham(wk)</item>
+        <item>Collingram</item>
+        <item>Tim Southee</item>
+        <item>Mat Henry</item>
+        <item>Ferguson</item>
+        <item>James Neesham</item>
+        <item>Mitchell Santner</item
+    </string-array>
     <string-array name="PAKISTAN">
         <item>Sarfaraz Ahmed(c,wk) </item>
         <item>Fakhar Zaman    </item>
@@ -93,10 +107,10 @@
     <string-array name="WEST_INDIES">
         <item>Chris gayle</item>
         <item>Jason Holder</item>
-        <item>Carlos Braithwaite</item>
+        <item>Carlos Braithwaite(c)</item>
         <item>ChanderPaul</item>
         <item>Sheldon Cotrelle</item>
-        <item>Shai Hope</item>
+        <item>Shai Hope(wk)</item>
         <item>Nicholas Pooran</item>
         <item>Darren Bravo</item>
         <item>Shimron hatmyer</item>
@@ -104,9 +118,9 @@
         <item>Oshane Thomas</item>
     </string-array>
     <string-array name="BANGLADES">
-        <item>Shakib Al HAsan</item>
+        <item>Shakib Al HAsan(c)</item>
         <item>Tamim Iqbal</item>
-        <item>Mushfiqur Rahim</item>
+        <item>Mushfiqur Rahim(wk)</item>
         <item>Mahmudullah</item>
         <item>Sabbir Rahman</item>
         <item>Liton Das</item>
