@@ -29,7 +29,7 @@ public class loginActivity extends AppCompatActivity {
 
                         startActivity(new Intent(loginActivity.this,Home.class));
                     }else{
-                        //wrong password
+
                     }
 
             }
