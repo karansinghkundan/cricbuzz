@@ -76,6 +76,8 @@ public class Home extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
+        if (id == R.id.action_LOGOUT)
+            startActivity(new Intent(Home.this,loginActivity.class));
 
 
         return super.onOptionsItemSelected(item);
