@@ -43,22 +43,11 @@ public class loginActivity extends AppCompatActivity {
                     if(edtEmail.getText().toString().equals("admin@gmail.com") && edtPass.getText().toString().equals("admin123")){
                         startActivity(new Intent(loginActivity.this,Home.class));
                         finish();
-                    }else{
-
                     }
+                    else
+                        {
 
-                    if(edtEmail.getText().toString().trim().length() == 0){
-                    edtEmail.setError("Enter a valid Email");
-                    showDialogBox();
-                }
-                else if(edtPass.getText().toString().trim().length() == 0){
-                    edtPass.setError("Enter Password");
-                }
 
-                if(edtEmail.getText().toString().equals("admin@gmail.com") && edtPass.getText().toString().equals("admin123")){
-                    startActivity(new Intent(loginActivity.this,Home.class));
-                    finish();
-                }else{
 
                 }
 
@@ -74,11 +63,9 @@ public class loginActivity extends AppCompatActivity {
                 .setTitle("Invalid")
                 .setMessage("Please enter valid details")
 
-                // Specifying a listener allows you to take an action before dismissing the dialog.
-                // The dialog is automatically dismissed when a dialog button is clicked.
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
+
                     }
                 }).show();
 
