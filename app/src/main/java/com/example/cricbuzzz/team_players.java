@@ -33,7 +33,7 @@ public class team_players extends AppCompatActivity {
                 teamPlayers = getResources().getStringArray(R.array.SOUTH_AFRICA);
                 break;
             case 4:
-                teamPlayers = getResources().getStringArray(R.array.BANGLADESH);
+                teamPlayers = getResources().getStringArray(R.array.BANGLADES);
                 break;
             case 5:
                 teamPlayers = getResources().getStringArray(R.array.INDIA);

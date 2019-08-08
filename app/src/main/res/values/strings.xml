@@ -14,4 +14,106 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+
+    <string-array name="countries">
+        <item>INDIA</item>
+        <item>AUSTRALIA</item>
+        <item>ENGLAND</item>
+        <item>SOUTH AFRICA</item>
+        <item>BANGLADESH</item>
+        <item>NEWZELAND</item>
+        <item>PAKISTAN</item>
+        <item>WESTINDIES</item>
+    </string-array>
+    <string-array name="INDIA">
+        <item>Rohit sharma</item>
+        <item>Shikhar dhawan</item>
+        <item>Virat kholi(c)</item>
+        <item>KL Rahul</item>
+        <item>MS Dhoni(wk)</item>
+        <item>Hardik Pandaya</item>
+        <item>Ravinder Jadeja</item>
+        <item>kuldeep yadav</item>
+        <item>Cahal</item>
+        <item>Bumrah</item>
+        <item>Bhubneshwar kumar</item>
+    </string-array>
+    <string-array name="AUSTRALIA">
+        <item>Aaron finch(c)</item>
+        <item>David warner</item>
+        <item>Usman Khawaja</item>
+        <item>Shaun marsh</item>
+        <item>Tim Pain(wk)</item>
+        <item>Zampa</item>
+        <item>Pat Cummins</item>
+        <item>Hazelwood</item>
+        <item>Nathan Lyon</item>
+        <item>Behrendrof</item>
+        <item>mitch starc</item>
+    </string-array>
+    <string-array name="ENGLAND">
+        <item>Jason Roy</item>
+        <item>Bairstow(wk)</item>
+        <item>Root(c)</item>
+        <item>Ben stokes</item>
+        <item>Buttler</item>
+        <item>Chris wokes</item>
+        <item>Moen Ali</item>
+        <item>Mark Wood</item>
+        <item>Archer</item>
+        <item>Broad</item>
+        <item>Plunket</item>
+    </string-array>
+    <string-array name="SOUTH_AFRICA">
+        <item>Hasim Amla</item>
+        <item>Faf Duplesi(c)</item>
+        <item>Markham</item>
+        <item>Miller</item>
+        <item>Klassen(wk)</item>
+        <item>Rossow</item>
+        <item>Lungi Nigidi</item>
+        <item>Morkel</item>
+        <item>Dwaine Pretorius</item>
+        <item>Dale Steyn</item>
+        <item>Kagiso Rabada</item>
+    </string-array>
+    <string-array name="PAKISTAN">
+        <item>Sarfaraz Ahmed(c,wk) </item>
+        <item>Fakhar Zaman    </item>
+        <item>Haris Sohail</item>
+        <item>Imam-ul-Haq</item>
+        <item>Mohammad Hafeez</item>
+        <item>Hasan Ali</item>
+        <item>Mohammad Amir</item>
+        <item>Shaheen Afridi</item>
+        <item>Wahab Riaz</item>
+        <item>Shadab Khan</item>
+        <item>Asif Ali</item>
+    </string-array>
+    <string-array name="WEST_INDIES">
+        <item>Chris gayle</item>
+        <item>Jason Holder</item>
+        <item>Carlos Braithwaite</item>
+        <item>ChanderPaul</item>
+        <item>Sheldon Cotrelle</item>
+        <item>Shai Hope</item>
+        <item>Nicholas Pooran</item>
+        <item>Darren Bravo</item>
+        <item>Shimron hatmyer</item>
+        <item>Ewin Lewis</item>
+        <item>Oshane Thomas</item>
+    </string-array>
+    <string-array name="BANGLADES">
+        <item>Shakib Al HAsan</item>
+        <item>Tamim Iqbal</item>
+        <item>Mushfiqur Rahim</item>
+        <item>Mahmudullah</item>
+        <item>Sabbir Rahman</item>
+        <item>Liton Das</item>
+        <item>Rubel Hossain</item>
+        <item>Soumya Sarkar</item>
+        <item>Moshrafe Mortaza</item>
+        <item>Mithun</item>
+        <item>Jayed</item>
+    </string-array>
 </resources>
