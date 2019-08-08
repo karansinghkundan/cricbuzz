@@ -89,10 +89,11 @@ public class Home extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-            startActivity(new Intent(Home.this,Player.class));
+            startActivity(new Intent(Home.this, Team.class));
 
 
         } else if (id == R.id.nav_slideshow) {
+            startActivity(new Intent(Home.this, team_players.class));
 
         } else if (id == R.id.nav_tools) {
 
