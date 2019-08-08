@@ -27,21 +27,6 @@ public class Team extends Activity implements AdapterView.OnItemClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team);
         listView = (ListView) findViewById(R.id.list_item);
-        /*Bundle mBundle = getIntent().getExtras();
-
-        if (mBundle!= null)
-        {
-            String Country = mBundle.getString("CountryName");
-            if(Country.equalsIgnoreCase("India"))
-            {
-            Coun = getResources().getStringArray(R.array.Ind);
-            }
-            else if (Country.equalsIgnoreCase("England");
-            {
-                Coun = getResources().getStringArray(R.array.Eng);
-            }
-        }
-        */
 
         countries = getResources().getStringArray(R.array.countries);
 
@@ -54,8 +39,6 @@ public class Team extends Activity implements AdapterView.OnItemClickListener {
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Log.d("POSITIONS -->>>>>>>> ", " : " + i);
-        Log.d("COUNTRIES -->>>>>>>> ", " : " + countries[i]);
         switch (i) {
             case 0:
 
