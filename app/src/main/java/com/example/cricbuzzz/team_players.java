@@ -34,6 +34,26 @@ public class team_players extends AppCompatActivity {
             {
                 temp.add(player);
             }
+            for(String player :  getResources().getStringArray(R.array.AUSTRALIA))
+            {
+                temp.add(player);
+            }
+            for(String player :  getResources().getStringArray(R.array.SOUTH_AFRICA))
+            {
+                temp.add(player);
+            }
+            for(String player :  getResources().getStringArray(R.array.ENGLAND))
+            {
+                temp.add(player);
+            }
+            for(String player :  getResources().getStringArray(R.array.WEST_INDIES))
+            {
+                temp.add(player);
+            }
+            for(String player :  getResources().getStringArray(R.array.New_ZEALAND))
+            {
+                temp.add(player);
+            }
             for(String player :  getResources().getStringArray(R.array.PAKISTAN))
             {
                 temp.add(player);
@@ -46,6 +66,10 @@ public class team_players extends AppCompatActivity {
                 teamPlayers[i++] = (String) iter.next();
             }
         }
+
+
+
+
         else {
             int position = bundle.getInt("Position");
             switch (position) {
