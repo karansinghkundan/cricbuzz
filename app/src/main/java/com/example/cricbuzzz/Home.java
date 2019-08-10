@@ -46,6 +46,8 @@ public class Home extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        getSupportActionBar().setTitle("CRICSTAR");
     }
 
     @Override
@@ -91,13 +93,15 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+
+        } else if (id == R.id.nav_team) {
             startActivity(new Intent(Home.this, Team.class));
 
 
-        } else if (id == R.id.nav_slideshow) {
-            startActivity(new Intent(Home.this, team_players.class));
+        } else if (id == R.id.nav_player) {
+            Intent i = new Intent(Home.this, team_players.class);
+            i.putExtra("SHOWALLTEAMS","SHOWALL");
+            startActivity(i);
 
         } else if (id == R.id.nav_tools) {
 
