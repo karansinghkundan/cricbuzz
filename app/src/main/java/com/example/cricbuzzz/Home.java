@@ -19,11 +19,16 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.Menu;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    FragmentManager fragmentManager;
+    FragmentTransaction fragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,7 +110,12 @@ public class Home extends AppCompatActivity
 
         } else if (id == R.id.nav_tools) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_share){
+            fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.content, new PhoneCallFragment());
+        fragmentTransaction.commit();
+        return true;
 
         } else if (id == R.id.nav_send) {
 

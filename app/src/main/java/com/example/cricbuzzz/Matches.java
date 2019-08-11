@@ -12,7 +12,8 @@ public class Matches extends AppCompatActivity {
             String team2_score;
             String Message;
             String MoM;
-
+            Address address;
+            Geo geo;
 
     public Matches(Boolean matchStarted, String match_date, String team1, String team2, String team1_score, String team2_score, String message, String moM) {
         this.matchStarted = matchStarted;
@@ -104,6 +105,5 @@ public class Matches extends AppCompatActivity {
                 '}';
     }
 
-    public void add(Matches mMatches) {
-    }
+
 }
