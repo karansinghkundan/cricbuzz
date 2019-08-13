@@ -1,38 +1,42 @@
-[Matches
-[{
-    "matchStarted": true,
-    "match_date" :"17-4-2019",
-    "team1": "England",
-    "team2": "India",
-    "team1 score":"256-8",
-    "team2_score" :"257-2",
-    "Message":"India won the match",
-    "MoM":"Virat Kholi",
-    "address": {
-        "street": "Kulas Light",
-        "suite": "Apt. 556",
-        "city": "Gwenborough",
-        "zipcode": "92998-3874",
-        "geo": {
-            "lat": "-37.3159",
-            "lng": "81.1496"
+[
+    {
+        "matchStarted":true,
+        "match_date":"17-4-2019",
+        "team1":"England",
+        "team2":"India",
+        "team1_score":"256-8",
+        "team2_score":"257-2",
+        "Message":"India won the match",
+        "MoM":"Virat Kholi",
+        "address":{
+            "street":"Kulas Light",
+            "suite":"Apt. 556",
+            "city":"Gwenborough",
+            "zipcode":"92998-3874",
+            "geo":{
+                "lat":"-37.3159",
+                "lng":"81.1496"
+            }
+        }
+    },
+    {
+        "matchStarted":true,
+        "match_date":"18-4-2019",
+        "team1":"Australia",
+        "team2":"South Africa",
+        "team1_score":"222-8",
+        "team2_score":"215-2",
+        "Message":"South Africa won the match",
+        "MoM":"faf duplessi",
+        "address":{
+            "street":"Kulas Light",
+            "suite":"Apt. 556",
+            "city":"Gwenborough",
+            "zipcode":"92998-3874",
+            "geo":{
+                "lat":"-37.3159",
+                "lng":"81.1496"
+            }
+        }
     }
-{
-"matchStarted": true,
-"match date" :"18-4-2019",
-"team1": "Australia",
-"team2": "South Africa",
-"team1Score":"222-8",
-"team2Score" :"215-2",
-"Message":"South Africa won the match",
-"MoM":"faf duplessi",
-    "address": {
-        "street": "Kulas Light",
-        "suite": "Apt. 556",
-        "city": "Gwenborough",
-        "zipcode": "92998-3874",
-        "geo": {
-            "lat": "-37.3159",
-            "lng": "81.1496"
- }]
-
+]

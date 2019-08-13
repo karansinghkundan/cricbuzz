@@ -4,10 +4,11 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DBHelper extends SQLiteOpenHelper
+public class   DBHelper extends SQLiteOpenHelper
 {
-    private static final String DB_NAME = "dbStudent";
+    private static final String DB_NAME = "dbUser";
     private static final int DB_VERSION = 1;
+
 
     public DBHelper(Context context)
     {
@@ -18,11 +19,12 @@ public class DBHelper extends SQLiteOpenHelper
     public void onCreate(SQLiteDatabase sqLiteDatabase)
     {
 
-        String userTable = "CREATE TABLE " + DBUser.TABLE_NAME
-                + "(" + DBUser.EMAIL + " TEXT PRIMARY KEY,"
-                + DBUser.PASSWORD + " TEXT)";
+        String UserTable = "CREATE TABLE " + DBUser.TABLE_NAME
+                + "(" + DBUser.USER_ID + " INT,"
+                + DBUser.USER_EMAIL + " TEXT,"
+                + DBUser.USER_PASSWORD + " TEXT)";
 
-        sqLiteDatabase.execSQL(userTable);
+        sqLiteDatabase.execSQL(UserTable);
     }
 
     @Override

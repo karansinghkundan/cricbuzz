@@ -1,6 +1,8 @@
 package com.example.cricbuzzz;
 
 import android.content.Context;
+import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -10,14 +12,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-public class DataStore {
+public class DataStore
+{
     Context context;
-    public ArrayList<ArrayList<Matches>> matchesArrayList ;
-    private Object Matches;
+    public ArrayList<Matches> matchesArrayList ;
 
-    public ArrayList<ArrayList<Matches>> getmSpaceXFlightList() {
-        return matchesArrayList;
-    }
 
     public DataStore(Context context)
     {
@@ -25,6 +24,7 @@ public class DataStore {
     }
 
     public String loadJSONFromAsset() {
+
         String json;
         try {
             InputStream is = context.getAssets().open("data.json");
@@ -47,12 +47,12 @@ public class DataStore {
         {
             try {
                 JSONArray mJSONArray = new JSONArray(jsonString);
-                matchesArrayList = new ArrayList<ArrayList<Matches>>();
+                matchesArrayList = new ArrayList<Matches>();
 
                 for (int i = 0; i < mJSONArray.length(); i++) {
 
-                    Matches matches = getFlightObjectFromJSON(mJSONArray.getJSONObject(i));
-                    matchesArrayList.add(matchesArrayList);
+                    Matches mMatches = getMatchObjectFromJSON(mJSONArray.getJSONObject(i));
+                    matchesArrayList.add(mMatches);
                 }
             }
             catch(JSONException e)
@@ -62,53 +62,34 @@ public class DataStore {
         }
     }
 
-    public Matches getFlightObjectFromJSON(JSONObject userJsonObject) throws JSONException
+     public Matches getMatchObjectFromJSON(JSONObject userJsonObject) throws JSONException
     {
-        String flight_number = userJsonObject.getString("flight_number");
-        String mission_name = userJsonObject.getString("mission_name");
-        String upcoming = userJsonObject.getString("upcoming");
-        String launch_year = userJsonObject.getString("launch_year");
-        String launch_window = userJsonObject.getString("launch_window");
-        String details = userJsonObject.getString("details");
-        JSONObject rocket = new JSONObject(userJsonObject.getJSONObject("rocket").toString());
-        String rocket_id = rocket.getString("rocket_id");
-        String rocket_name = rocket.getString("rocket_name");
-        String rocket_type = rocket.getString("rocket_type");
-        JSONObject launchSite = new JSONObject(userJsonObject.getJSONObject("launch_site").toString());
-        String site_id = launchSite.getString("site_id");
-        String site_name = launchSite.getString("site_name");
-        String site_name_long = launchSite.getString("site_name_long");
-        JSONObject links = new JSONObject(userJsonObject.getJSONObject("links").toString());
-        String mission_patch = links.getString("mission_patch");
-        String mission_patch_small = links.getString("mission_patch_small");
-        String article_link = links.getString("article_link");
-        String wikipedia = links.getString("wikipedia");
-        String video_link = links.getString("video_link");
-        SpaceXFlight mSpaceXFlight = new SpaceXFlight();
-        mSpaceXFlight.setFlight_number(flight_number);
-        mSpaceXFlight.setMission_name(mission_name);
-        mSpaceXFlight.setUpcoming(upcoming);
-        mSpaceXFlight.setLaunch_year(launch_year);
-        mSpaceXFlight.setLaunch_window(launch_window);
-        mSpaceXFlight.setDetails(details);
-        Rocket mRocket = new Rocket();
-        mRocket.setRocket_id(rocket_id);
-        mRocket.setRocket_name(rocket_name);
-        mRocket.setRocket_type(rocket_type);
-        mSpaceXFlight.setRocket(mRocket);
-        LaunchSite mLaunchSite = new LaunchSite();
-        mLaunchSite.setSite_id(site_id);
-        mLaunchSite.setSite_name(site_name);
-        mLaunchSite.setSite_name_long(site_name_long);
-        mSpaceXFlight.setLaunchSite(mLaunchSite);
-        Links mLinks = new Links();
-        mLinks.setMission_patch(mission_patch);
-        mLinks.setMission_patch_small(mission_patch_small);
-        mLinks.setArticle_link(article_link);
-        mLinks.setWikipedia(wikipedia);
-        mLinks.setVideo_link(video_link);
-        mSpaceXFlight.setLinks(mLinks);
 
-        return Matches;
+        Boolean matchStarted = userJsonObject.getBoolean("matchStarted");
+        String matchDate = userJsonObject.getString("match_date");
+        String team1 = userJsonObject.getString("team1");
+        String team2 = userJsonObject.getString("team2");
+        String team1Score = userJsonObject.getString("team1_score");
+        String team2Score = userJsonObject.getString("team2_score");
+        String message = userJsonObject.getString("Message");
+        String ManofMatch = userJsonObject.getString("MoM");
+        //Address
+        JSONObject jsonObject = userJsonObject.getJSONObject("address");
+        String street = jsonObject.getString("street");
+        String suite = jsonObject.getString("suite");
+        String city = jsonObject.getString("city");
+        String zipcode = jsonObject.getString("zipcode");
+
+//geo
+        JSONObject jsonObjectGeo = jsonObject.getJSONObject("geo");
+        String lat = jsonObjectGeo.getString("lat");
+        String lng = jsonObjectGeo.getString("lng");
+
+        Geo geoObj = new Geo(lat,lng);
+        Address addressObj = new Address(street,suite,city,zipcode,geoObj);
+        Matches matchobj = new Matches(matchStarted,matchDate,team1,team2,team1Score,team2Score,message,ManofMatch,addressObj);
+        Log.d("Match Obj : ---->> ",matchobj.toString());
+        return matchobj;
     }
+
 }

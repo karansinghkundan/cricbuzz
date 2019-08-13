@@ -24,17 +24,23 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.view.Menu;
 
-public class Home extends AppCompatActivity
+public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     FragmentManager fragmentManager;
+    DataStore mDataStore;
     FragmentTransaction fragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        DataStore dataStore = new DataStore(this);
+        dataStore.processJSON();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        mDataStore = new DataStore(HomeActivity.this);
+        mDataStore.processJSON();
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +81,7 @@ public class Home extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
+        // automatically handle clicks on the HomeActivity/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
@@ -84,7 +90,7 @@ public class Home extends AppCompatActivity
             return true;
         }
         if (id == R.id.action_LOGOUT)
-            startActivity(new Intent(Home.this,loginActivity.class));
+            startActivity(new Intent(HomeActivity.this,loginActivity.class));
 
 
         return super.onOptionsItemSelected(item);
@@ -100,15 +106,16 @@ public class Home extends AppCompatActivity
         if (id == R.id.nav_home) {
 
         } else if (id == R.id.nav_team) {
-            startActivity(new Intent(Home.this, Team.class));
+            startActivity(new Intent(HomeActivity.this, Team.class));
 
 
         } else if (id == R.id.nav_player) {
-            Intent i = new Intent(Home.this, team_players.class);
+            Intent i = new Intent(HomeActivity.this, team_players.class);
             i.putExtra("SHOWALLTEAMS","SHOWALL");
             startActivity(i);
 
         } else if (id == R.id.nav_tools) {
+
 
         } else if (id == R.id.nav_share){
             fragmentManager = getSupportFragmentManager();

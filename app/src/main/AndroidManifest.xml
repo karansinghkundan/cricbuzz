@@ -18,7 +18,7 @@
         <activity android:name=".team_players"></activity>
         <activity android:name=".Team" />
         <activity
-            android:name=".Home"
+            android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".loginActivity" />

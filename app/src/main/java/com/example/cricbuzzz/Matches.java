@@ -13,7 +13,21 @@ public class Matches extends AppCompatActivity {
             String Message;
             String MoM;
             Address address;
-            Geo geo;
+
+    public Matches() {
+    }
+
+    public Matches(Boolean matchStarted, String match_date, String team1, String team2, String team1_score, String team2_score, String message, String moM, Address address) {
+        this.matchStarted = matchStarted;
+        this.match_date = match_date;
+        this.team1 = team1;
+        this.team2 = team2;
+        this.team1_score = team1_score;
+        this.team2_score = team2_score;
+        Message = message;
+        MoM = moM;
+        this.address = address;
+    }
 
     public Matches(Boolean matchStarted, String match_date, String team1, String team2, String team1_score, String team2_score, String message, String moM) {
         this.matchStarted = matchStarted;
@@ -91,19 +105,7 @@ public class Matches extends AppCompatActivity {
         MoM = moM;
     }
 
-    @Override
-    public String toString() {
-        return "Matches{" +
-                "matchStarted=" + matchStarted +
-                ", match_date='" + match_date + '\'' +
-                ", team1='" + team1 + '\'' +
-                ", team2='" + team2 + '\'' +
-                ", team1_score='" + team1_score + '\'' +
-                ", team2_score='" + team2_score + '\'' +
-                ", Message='" + Message + '\'' +
-                ", MoM='" + MoM + '\'' +
-                '}';
-    }
+
 
 
 }
