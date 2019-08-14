@@ -8,21 +8,22 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="427dp"
-        android:layout_height="159dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="373dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintVertical_bias="0.117"
+        app:srcCompat="@drawable/logo"
+        android:background="#000"/>
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="464dp"
+        android:layout_width="380dp"
+        android:layout_height="472dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Cricstar is an Indian cricket news website owned by Times Internet. It features news, articles and live coverage of cricket matches (including videos, scorecards and text commentary), player and team rankings. The website also offers a mobile app. CricBuzz is the most popular mobile app for cricket news and scores in India.[4]"

@@ -93,9 +93,7 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
         if (id == R.id.action_LOGOUT) {
             startActivity(new Intent(HomeActivity.this, loginActivity.class));
         }
@@ -116,7 +114,6 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            startActivity(new Intent(HomeActivity.this, PhoneCall.class));
 
         } else if (id == R.id.nav_team) {
             startActivity(new Intent(HomeActivity.this, Team.class));
@@ -133,6 +130,7 @@ public class HomeActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_share){
 
+            startActivity(new Intent(HomeActivity.this, PhoneCall.class));
 
 
         } else if (id == R.id.nav_send) {
