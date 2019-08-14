@@ -109,6 +109,7 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+            startActivity(new Intent(HomeActivity.this, PhoneCall.class));
 
         } else if (id == R.id.nav_team) {
             startActivity(new Intent(HomeActivity.this, Team.class));
@@ -124,11 +125,8 @@ public class HomeActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_share){
-            fragmentManager = getSupportFragmentManager();
-        fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.content, new PhoneCallFragment());
-        fragmentTransaction.commit();
-        return true;
+
+
 
         } else if (id == R.id.nav_send) {
             startActivity(new Intent(HomeActivity.this, Camera.class));
