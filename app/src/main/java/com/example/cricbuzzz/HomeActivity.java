@@ -89,9 +89,14 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
-        if (id == R.id.action_LOGOUT)
-            startActivity(new Intent(HomeActivity.this,loginActivity.class));
+        if (id == R.id.action_LOGOUT) {
+            startActivity(new Intent(HomeActivity.this, loginActivity.class));
+        }
+        if(id == R.id.about_us)
+        {
+            startActivity(new Intent(HomeActivity.this, AboutUs_.class));
 
+        }
 
         return super.onOptionsItemSelected(item);
 
@@ -115,6 +120,7 @@ public class HomeActivity extends AppCompatActivity
             startActivity(i);
 
         } else if (id == R.id.nav_tools) {
+            startActivity(new Intent(HomeActivity.this,AboutUs_.class));
 
 
         } else if (id == R.id.nav_share){
@@ -125,6 +131,7 @@ public class HomeActivity extends AppCompatActivity
         return true;
 
         } else if (id == R.id.nav_send) {
+            startActivity(new Intent(HomeActivity.this, Camera.class));
 
         }
 
