@@ -12,17 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PhoneCall"></activity>
-        <activity android:name=".Camera" />
-        <activity android:name=".AboutUs_" />
-        <activity android:name=".team_players" />
-        <activity android:name=".Team" />
+        <activity android:name=".Controler.PhoneCall"></activity>
+        <activity android:name=".Controler.Camera" />
+        <activity android:name=".Model.AboutUs_" />
+        <activity android:name=".Model.team_players" />
+        <activity android:name=".Model.Team" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".View.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".loginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".View.loginActivity" />
+        <activity android:name=".View.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

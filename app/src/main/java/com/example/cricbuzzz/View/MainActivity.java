@@ -1,10 +1,12 @@
-package com.example.cricbuzzz;
+package com.example.cricbuzzz.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.cricbuzzz.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(MainActivity.this,loginActivity.class));
+                startActivity(new Intent(MainActivity.this, loginActivity.class));
             }
         },1500);
 

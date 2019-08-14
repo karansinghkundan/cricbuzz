@@ -1,4 +1,6 @@
-package com.example.cricbuzzz;
+package com.example.cricbuzzz.Model;
+
+import com.example.cricbuzzz.Model.Geo;
 
 public class Address {
 

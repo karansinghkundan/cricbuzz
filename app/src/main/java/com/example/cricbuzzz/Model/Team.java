@@ -1,21 +1,15 @@
-package com.example.cricbuzzz;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.cricbuzzz.Model;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import static com.example.cricbuzzz.R.id.logout;
+import com.example.cricbuzzz.R;
 
 public class Team extends Activity implements AdapterView.OnItemClickListener {
     ListView listView;

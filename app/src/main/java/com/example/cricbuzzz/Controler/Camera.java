@@ -1,4 +1,4 @@
-package com.example.cricbuzzz;
+package com.example.cricbuzzz.Controler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.example.cricbuzzz.R;
 
 public class Camera extends AppCompatActivity {
     public static final int CAMERA_REQUEST= 9999;

@@ -1,9 +1,11 @@
-package com.example.cricbuzzz;
+package com.example.cricbuzzz.Model;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.example.cricbuzzz.Controler.DBHelper;
 
 import java.util.ArrayList;
 

@@ -1,8 +1,15 @@
-package com.example.cricbuzzz;
+package com.example.cricbuzzz.View;
 
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.cricbuzzz.Controler.Camera;
+import com.example.cricbuzzz.Controler.DataStore;
+import com.example.cricbuzzz.Model.AboutUs_;
+import com.example.cricbuzzz.Model.Team;
+import com.example.cricbuzzz.Model.team_players;
+import com.example.cricbuzzz.Controler.PhoneCall;
+import com.example.cricbuzzz.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 

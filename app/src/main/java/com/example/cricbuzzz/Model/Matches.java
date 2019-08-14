@@ -1,4 +1,4 @@
-package com.example.cricbuzzz;
+package com.example.cricbuzzz.Model;
 
 import androidx.appcompat.app.AppCompatActivity;
 

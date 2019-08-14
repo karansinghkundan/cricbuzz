@@ -1,8 +1,10 @@
-package com.example.cricbuzzz;
+package com.example.cricbuzzz.Controler;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.example.cricbuzzz.Model.DBUser;
 
 public class   DBHelper extends SQLiteOpenHelper
 {

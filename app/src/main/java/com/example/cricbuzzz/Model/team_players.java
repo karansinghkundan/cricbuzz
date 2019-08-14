@@ -1,4 +1,4 @@
-package com.example.cricbuzzz;
+package com.example.cricbuzzz.Model;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
+import com.example.cricbuzzz.R;
 
 import java.util.ArrayList;
 import java.util.Iterator;

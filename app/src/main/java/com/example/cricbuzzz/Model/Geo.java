@@ -1,4 +1,4 @@
-package com.example.cricbuzzz;
+package com.example.cricbuzzz.Model;
 
 public class Geo {
 

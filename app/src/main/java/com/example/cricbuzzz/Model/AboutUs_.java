@@ -1,4 +1,4 @@
-package com.example.cricbuzzz;
+package com.example.cricbuzzz.Model;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.sax.Element;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.cricbuzzz.R;
 
 public class AboutUs_ extends AppCompatActivity {
 
