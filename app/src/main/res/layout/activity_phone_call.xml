@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:inputType="phone"
-        android:hint="ENTER PHONE NUMBER"/>
+        android:hint="ENTER PHONE NUMBER"
+        android:textColor="#232F74"/>
 
     <Button
         android:id="@+id/buttoncall"
