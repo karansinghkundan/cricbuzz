@@ -10,7 +10,7 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_team"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/pic"
             android:title="Team" />
         <item
             android:id="@+id/nav_player"
@@ -31,7 +31,7 @@
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-android:title="Camera"     />   </menu>
+                android:title="Camera"     />   </menu>
     </item>
 
 </menu>

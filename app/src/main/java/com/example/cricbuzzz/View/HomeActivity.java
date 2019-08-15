@@ -1,10 +1,12 @@
 package com.example.cricbuzzz.View;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 
 import com.example.cricbuzzz.Controler.Camera;
 import com.example.cricbuzzz.Controler.DataStore;
+import com.example.cricbuzzz.MatchListActivity;
 import com.example.cricbuzzz.Model.AboutUs_;
 import com.example.cricbuzzz.Model.Team;
 import com.example.cricbuzzz.Model.team_players;
@@ -37,12 +39,13 @@ public class HomeActivity extends AppCompatActivity
     FragmentManager fragmentManager;
     DataStore mDataStore;
     FragmentTransaction fragmentTransaction;
+    public static Bitmap bitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        DataStore dataStore = new DataStore(this);
-        dataStore.processJSON();
+        //DataStore dataStore = new DataStore(this);
+        //dataStore.processJSON();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -125,8 +128,7 @@ public class HomeActivity extends AppCompatActivity
             startActivity(i);
 
         } else if (id == R.id.nav_tools) {
-            startActivity(new Intent(HomeActivity.this,AboutUs_.class));
-
+            startActivity(new Intent(HomeActivity.this, MatchListActivity.class));
 
         } else if (id == R.id.nav_share){
 

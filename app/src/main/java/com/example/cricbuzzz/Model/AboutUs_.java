@@ -24,11 +24,11 @@ public class AboutUs_ extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://apps.apple.com/in/app/cricbuzz-cricket-scores-news/id360466413")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store?hl=en")));
                 }
                 catch (ActivityNotFoundException e)
                 {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://apps.apple.com/in/app/cricbuzz-cricket-scores-news/id360466413")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store?hl=en")));
 
                 }
 

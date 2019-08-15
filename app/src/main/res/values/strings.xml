@@ -130,4 +130,6 @@
         <item>Mithun</item>
         <item>Jayed</item>
     </string-array>
+    <string name="title_match_list">Matches</string>
+    <string name="title_match_detail">Match Detail</string>
 </resources>

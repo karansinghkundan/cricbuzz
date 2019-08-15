@@ -7,6 +7,7 @@ public class Matches extends AppCompatActivity {
     Boolean matchStarted;
     String match_date;
     String team1;
+    String id;
             String team2;
             String team1_score;
             String team2_score;
@@ -27,6 +28,26 @@ public class Matches extends AppCompatActivity {
         Message = message;
         MoM = moM;
         this.address = address;
+    }
+    public Matches(String id,Boolean matchStarted, String match_date, String team1, String team2, String team1_score, String team2_score, String message, String moM, Address address) {
+        this.matchStarted = matchStarted;
+        this.match_date = match_date;
+        this.team1 = team1;
+        this.team2 = team2;
+        this.team1_score = team1_score;
+        this.team2_score = team2_score;
+        Message = message;
+        MoM = moM;
+        this.address = address;
+        this.id=id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Matches(Boolean matchStarted, String match_date, String team1, String team2, String team1_score, String team2_score, String message, String moM) {
@@ -105,7 +126,27 @@ public class Matches extends AppCompatActivity {
         MoM = moM;
     }
 
+    public Address getAddress() {
+        return address;
+    }
 
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 
-
+    @Override
+    public String toString() {
+        return "Matches{" +
+                "matchStarted=" + matchStarted +
+                ", match_date='" + match_date + '\'' +
+                ", team1='" + team1 + '\'' +
+                ", id=" + id +
+                ", team2='" + team2 + '\'' +
+                ", team1_score='" + team1_score + '\'' +
+                ", team2_score='" + team2_score + '\'' +
+                ", Message='" + Message + '\'' +
+                ", MoM='" + MoM + '\'' +
+                ", address=" + address +
+                '}';
+    }
 }

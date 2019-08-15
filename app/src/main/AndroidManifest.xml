@@ -12,7 +12,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Controler.PhoneCall"></activity>
+        <activity
+            android:name=".MatchListActivity"
+            android:label="@string/title_match_list"
+            android:parentActivityName=".View.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cricbuzzz.View.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".MatchDetailActivity"
+            android:label="@string/title_match_detail"
+            android:parentActivityName=".MatchListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cricbuzzz.MatchListActivity" />
+        </activity>
+        <activity android:name=".View.Map" />
+        <activity android:name=".Controler.PhoneCall" />
         <activity android:name=".Controler.Camera" />
         <activity android:name=".Model.AboutUs_" />
         <activity android:name=".Model.team_players" />
