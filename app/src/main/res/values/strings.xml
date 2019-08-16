@@ -132,4 +132,6 @@
     </string-array>
     <string name="title_match_list">Matches</string>
     <string name="title_match_detail">Match Detail</string>
+    <string name="title_activity_matches_list">MatchesListActivity</string>
+    <string name="title_activity_match_row_detail">MatchRowDetail</string>
 </resources>

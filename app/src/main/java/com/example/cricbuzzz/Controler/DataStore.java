@@ -95,4 +95,7 @@ public class DataStore
         return matchobj;
     }
 
+    public ArrayList<Matches> getMatchesArrayList() {
+        return matchesArrayList;
+    }
 }

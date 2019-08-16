@@ -18,10 +18,9 @@ public class loginActivity extends AppCompatActivity {
     Button btnLogin;
     EditText edtEmail,edtPass;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        DataStore dataStore = new DataStore(this);
-        dataStore.processJSON();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 

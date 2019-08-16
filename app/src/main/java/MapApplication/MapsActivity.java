@@ -1,4 +1,4 @@
-package com.example.cricbuzzz.View;
+package MapApplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.cricbuzzz.R;
 
-public class Map extends AppCompatActivity {
+public class MapsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

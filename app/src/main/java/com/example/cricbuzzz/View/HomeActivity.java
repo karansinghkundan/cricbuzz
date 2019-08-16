@@ -6,8 +6,8 @@ import android.os.Bundle;
 
 import com.example.cricbuzzz.Controler.Camera;
 import com.example.cricbuzzz.Controler.DataStore;
-import com.example.cricbuzzz.MatchListActivity;
 import com.example.cricbuzzz.Model.AboutUs_;
+import com.example.cricbuzzz.Model.Matches;
 import com.example.cricbuzzz.Model.Team;
 import com.example.cricbuzzz.Model.team_players;
 import com.example.cricbuzzz.Controler.PhoneCall;
@@ -33,24 +33,25 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.view.Menu;
 
+import java.util.ArrayList;
+
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     FragmentManager fragmentManager;
     DataStore mDataStore;
+    public static ArrayList<Matches> matchesArrayList ;
     FragmentTransaction fragmentTransaction;
     public static Bitmap bitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        //DataStore dataStore = new DataStore(this);
-        //dataStore.processJSON();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
         mDataStore = new DataStore(HomeActivity.this);
         mDataStore.processJSON();
+        matchesArrayList = mDataStore.getMatchesArrayList();
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -128,7 +129,8 @@ public class HomeActivity extends AppCompatActivity
             startActivity(i);
 
         } else if (id == R.id.nav_tools) {
-            startActivity(new Intent(HomeActivity.this, MatchListActivity.class));
+            startActivity(new Intent(HomeActivity.this, MatchesListActivity.class));
+
 
         } else if (id == R.id.nav_share){
 
