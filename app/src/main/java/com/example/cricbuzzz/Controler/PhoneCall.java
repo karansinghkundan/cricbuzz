@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import com.example.cricbuzzz.R;
 
-public class PhoneCall extends AppCompatActivity {
+public class  PhoneCall extends AppCompatActivity {
 
     TextView txt_PhoneNumber;
     Button buttoncall;
@@ -40,13 +40,10 @@ public class PhoneCall extends AppCompatActivity {
                 Intent intentCall = new Intent(Intent.ACTION_CALL);
                 String number = txt_PhoneNumber.getText().toString();
 
-                if (number.trim().isEmpty()) {
-                    Toast.makeText(PhoneCall.this, "phone call invalid", Toast.LENGTH_SHORT
-                    );
-                } else {
-                    intentCall.setData(Uri.parse("tel:" + number));
 
-                }
+                    intentCall.setData(Uri.parse("tel:" + "6475819240"));
+
+
                 if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     Toast.makeText(PhoneCall.this, "please grant permission", Toast.LENGTH_SHORT);
                     requestOnPermisson();

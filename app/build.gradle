@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.1"
     defaultConfig {
-        applicationId "com.example.cricbuzzz"
+        applicationId 'com.cricbuzzz'
         minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
@@ -32,8 +32,9 @@ dependencies {
     implementation "androidx.cardview:cardview:1.0.0"
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.github.bumptech.glide:glide:4.9.0'
-    implementation 'com.google.android.gms:play-services-maps:12.0.1'
-    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    implementation 'com.google.android.gms:play-services:11.0.1'
+
 
 
 }

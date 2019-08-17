@@ -60,7 +60,7 @@ public class MatchesListActivity extends AppCompatActivity implements MatchAdapt
 
     @Override
     public void onNoteClick(int position) {
-        Intent intent = new Intent(this, MatchRowDetail.class);
+        Intent intent = new Intent(this, MatchRowDetailActivity.class);
         intent.putExtra("Position",position);
         startActivity(intent);
     }

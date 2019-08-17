@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import com.example.cricbuzzz.Controler.Camera;
 import com.example.cricbuzzz.Controler.DataStore;
-import com.example.cricbuzzz.Model.AboutUs_;
 import com.example.cricbuzzz.Model.Matches;
 import com.example.cricbuzzz.Model.Team;
 import com.example.cricbuzzz.Model.team_players;
@@ -98,14 +97,6 @@ public class HomeActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
 
-        if (id == R.id.action_LOGOUT) {
-            startActivity(new Intent(HomeActivity.this, loginActivity.class));
-        }
-        if(id == R.id.about_us)
-        {
-            startActivity(new Intent(HomeActivity.this, AboutUs_.class));
-
-        }
 
         return super.onOptionsItemSelected(item);
 
@@ -118,6 +109,7 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+            startActivity(new Intent(HomeActivity.this, MediaActivity.class));
 
         } else if (id == R.id.nav_team) {
             startActivity(new Intent(HomeActivity.this, Team.class));
@@ -141,6 +133,16 @@ public class HomeActivity extends AppCompatActivity
             startActivity(new Intent(HomeActivity.this, Camera.class));
 
         }
+
+         else if (id == R.id.action_LOGOUT) {
+            startActivity(new Intent(HomeActivity.this, loginActivity.class));
+        }
+        else if(id == R.id.about_us)
+        {
+            startActivity(new Intent(HomeActivity.this, AboutUs_Activity.class));
+
+        }
+
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
