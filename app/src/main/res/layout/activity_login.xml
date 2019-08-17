@@ -18,6 +18,7 @@
         android:layout_marginRight="8dp"
         android:background="#ffff"
         android:ems="10"
+        android:text="naina@gmail.com"
         android:gravity="center"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -38,7 +39,7 @@
         android:layout_marginBottom="8dp"
         android:background="#ffff"
         android:ems="10"
-
+        android:text="naina123"
         android:gravity="center"
         android:hint="Password"
         android:inputType="textPassword"

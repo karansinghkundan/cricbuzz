@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -61,7 +62,8 @@ public class MatchesListActivity extends AppCompatActivity implements MatchAdapt
     @Override
     public void onNoteClick(int position) {
         Intent intent = new Intent(this, MatchRowDetailActivity.class);
-        intent.putExtra("Position",position);
+        intent.putExtra("position",position);
+        Log.d("Position --> ",String.valueOf(position));
         startActivity(intent);
     }
 }

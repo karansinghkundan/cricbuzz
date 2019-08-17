@@ -3,6 +3,7 @@ package com.example.cricbuzzz.View;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.cricbuzzz.Model.Matches;
 import com.example.cricbuzzz.R;
 import com.example.cricbuzzz.View.HomeActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -11,6 +12,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -32,12 +34,16 @@ TextView textView;
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        textView =findViewById(R.id.textView);
+        textView =findViewById(R.id.textDetail);
 
         Intent intent = getIntent();
 
-        int position = intent.getIntExtra("Position", 0);
-        textView.setText(HomeActivity.matchesArrayList.get(position).toString());
+        int position = intent.getIntExtra("position", 0);
+        Log.d("Position class:",String.valueOf(position));
+        //textView.setText(HomeActivity.matchesArrayList.get(position).toString());
+        Matches match = HomeActivity.matchesArrayList.get(position);
+        String id = match.getId();
+
 
     }
 
