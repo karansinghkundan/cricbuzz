@@ -3,6 +3,7 @@ package com.example.cricbuzzz.View;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.cricbuzzz.Model.Address;
 import com.example.cricbuzzz.Model.Matches;
 import com.example.cricbuzzz.R;
 import com.example.cricbuzzz.View.HomeActivity;
@@ -34,15 +35,25 @@ TextView textView;
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        textView =findViewById(R.id.textDetail);
+        textView = findViewById(R.id.textDetail);
 
         Intent intent = getIntent();
 
         int position = intent.getIntExtra("position", 0);
-        Log.d("Position class:",String.valueOf(position));
+        Log.d("Position class:", String.valueOf(position));
         //textView.setText(HomeActivity.matchesArrayList.get(position).toString());
         Matches match = HomeActivity.matchesArrayList.get(position);
         String id = match.getId();
+        String matchDate = match.getMatch_date();
+        String team1 = match.getTeam1();
+        String team2 = match.getTeam2();
+        String team1_score = match.getTeam1_score();
+        String team2_score = match.getTeam2_score();
+        String message = match.getMessage();
+        String MoM = match.getMoM();
+        Address Address = match.getAddress();
+
+
 
 
     }

@@ -17,40 +17,7 @@ import com.example.cricbuzzz.R;
 public class MainActivity extends AppCompatActivity {
 
 
-    /*LocationManager mLocationManager;
-    private static final String TAG = "MainActivity";
 
-    TextView tvLong;
-
-    private final LocationListener mLocationListener = new LocationListener() {
-        @Override
-        public void onLocationChanged(final Location location) {
-
-            Log.e(TAG, "onLocationChanged: "+location.getLatitude() );
-            //your code
-
-            String a = String.valueOf(location.getLatitude());
-            String bn = String.valueOf(location.getLongitude());
-
-            Log.e(TAG, "onLocationChanged: "+a +"      "+bn  );
-
-        }
-
-        @Override
-        public void onStatusChanged(String s, int i, Bundle bundle) {
-
-        }
-
-        @Override
-        public void onProviderEnabled(String s) {
-
-        }
-
-        @Override
-        public void onProviderDisabled(String s) {
-
-        }
-    };*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,9 +33,5 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //mLocationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-
-        //mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000,
-               // 100, mLocationListener);
     }
 }
